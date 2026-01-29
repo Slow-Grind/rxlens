@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'MonoMedium';
+    src: url('../public/JetBrainsMono-Medium.woff2') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'MonoMedium';
+    font-size: 14px;
+}

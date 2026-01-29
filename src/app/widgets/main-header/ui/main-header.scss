@@ -1,0 +1,13 @@
+@use "colors.scss" as colors;
+
+.main-header {
+    display: flex;
+    height: 4rem;
+    font-size: 2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    background-color: colors.$primary-color;
+    color: white;
+    z-index: 1000;
+}
