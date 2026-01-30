@@ -3,11 +3,14 @@
 .main-header {
     display: flex;
     height: 4rem;
-    font-size: 2rem;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     align-items: center;
     background-color: colors.$primary-color;
-    color: white;
     z-index: 1000;
+
+    &__title {
+        font-size: 2rem;
+        color: white;
+    }
 }

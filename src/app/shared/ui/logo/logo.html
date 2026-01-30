@@ -1,0 +1,21 @@
+<svg width="70" height="70" viewBox="0 0 24 24" xmlns="http://www.w3.org">
+  <defs>
+    <linearGradient id="rayInFade" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0" />
+      <stop offset="30%" stop-color="white" stop-opacity="1" />
+      <stop offset="100%" stop-color="white" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="rayOutFade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="1" />
+      <stop offset="75%" stop-color="white" stop-opacity="1" />
+      <stop offset="100%" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <ellipse class="mirror" cx="10" cy="12" rx="2.6" ry="6" fill="white"/>
+  <path class="ray-in" d="M20 9L11.8 12" stroke-width="0.3" stroke-linecap="round" fill="none"/>
+  <path class="ray-out" d="M11.8 12L22 22" stroke-width="0.3" stroke-linecap="round" fill="none"/>
+  <g transform="translate(11.8, 12)">
+    <rect class="pixel p1" x="-0.3" y="-0.3" width="0.7" height="0.7" fill="none" stroke="magenta" stroke-width="0.12"/>
+    <rect class="pixel p2" x="-0.2" y="-0.2" width="0.5" height="0.5" fill="none" stroke="magenta" stroke-width="0.12"/>
+  </g>
+</svg>

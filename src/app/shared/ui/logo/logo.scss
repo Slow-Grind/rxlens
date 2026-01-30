@@ -1,0 +1,69 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes p1 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translate(-1.5px, 1.2px);
+        opacity: 0;
+    }
+}
+
+@keyframes p2 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translate(-0.4px, -1.8px);
+        opacity: 0;
+    }
+}
+
+.mirror {
+    opacity: 0;
+    animation: fadeIn 0.58s ease-out forwards;
+}
+
+.ray-in { 
+    stroke-dashoffset: 12;
+    stroke-dasharray: 12;
+    stroke: url(#rayInFade);
+    animation: draw 0.58s linear forwards; 
+}
+
+.ray-out { 
+    stroke-dashoffset: 18; stroke-dasharray: 18;
+    stroke: url(#rayOutFade);
+    animation: draw 0.92s ease-out 0.58s forwards; 
+}
+
+.pixel {
+    opacity: 0;
+}
+
+.p1 {
+    animation: p1 0.46s ease-out 0.58s forwards;
+}
+
+.p2 {
+    animation: p2 0.35s ease-out 0.58s forwards;
+}
